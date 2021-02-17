@@ -1,12 +1,13 @@
-import React from "react";
-import PropTypes from "prop-types";
-import defaultImage from "./love-is.png";
+import React from 'react';
+import PropTypes from 'prop-types';
+import defaultImage from './love-is.png';
+import './Painting.css';
 
 // console.log(defaultImage);
 
 const Painting = ({ url, title, profileURL, tag, price, quantity }) => (
-  <div>
-    <img src={url} alt={title} width="480" />
+  <div className="Painting">
+    <img src={url} alt={title} width="370" />
     <h2>{title}</h2>
     <p>
       Автор:
@@ -15,7 +16,7 @@ const Painting = ({ url, title, profileURL, tag, price, quantity }) => (
     <p>Цена: {price} кредитов</p>
     <p>
       Доступность:
-      {quantity < 10 ? "Товар заканчивается" : "Есть на складе"}
+      {quantity < 10 ? 'Товар заканчивается' : 'Есть на складе'}
     </p>
     <button type="button">Добавить в корзину</button>
   </div>

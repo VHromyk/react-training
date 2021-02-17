@@ -1,0 +1,21 @@
+.notification {
+  padding: 10px 20px;
+  color: black;
+  line-height: 1.5;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 300px;
+  text-align: center;
+}
+
+.error {
+  composes: notification;
+  background-color: red;
+  color: white;
+}
+
+.success {
+  color: white;
+  composes: notification;
+  background-color: green;
+}
